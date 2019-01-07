@@ -10,11 +10,12 @@ filter2D is studied as well.
     Inter(R) Corporation Intel(R) Core(TM) i7-4710MQ CPU@2.5GHZ
     NVIDIA Corporation GeForce GTX 850M
 ## How to Run
-    $ git clone git@github.com:ShoupingShan/OpenCL-Image-Filter.git
-    $ make clean
-    $ make
-    $ ./pic
-
+``` shell
+$ git clone git@github.com:ShoupingShan/OpenCL-Image-Filter.git
+$ make clean
+$ make
+$ ./pic
+```
   >**Note**:
   1. If you want change input image, you should not only change the width
         and height in `./pic.cpp` line 12, but also in `./CL/oclFilter.cl` line 8.
