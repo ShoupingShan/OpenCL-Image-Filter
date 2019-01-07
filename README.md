@@ -12,6 +12,7 @@ filter2D is studied as well.
 ## How to Run
 ``` shell
 $ git clone git@github.com:ShoupingShan/OpenCL-Image-Filter.git
+$ cd OpenCL-Image-Filter
 $ make clean
 $ make
 $ ./pic
