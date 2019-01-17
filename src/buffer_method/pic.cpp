@@ -7,7 +7,7 @@
 #include <CL/cl.h>
 #include <sys/types.h>
 #include<fcntl.h>
-#define COMPUTE_KERNEL_FILENAME ("./CL/oclFilter.cl") //  path to file
+#define COMPUTE_KERNEL_FILENAME ("../../CL/oclFilter.cl") //  path to file
 using namespace std;
 int width = 512,height = 512;       // image resolution, change it to yours one
 cl_int err;                         // error output
@@ -237,7 +237,7 @@ int main()
     fout1.open("./result/OpenCL.txt",ios::out);
     fout2.open("./result/Normal.txt",ios::out);
     fout3.open("./result/OpenCV.txt",ios::out);
-    Mat rgbimage = imread("./data/Lena.jpg");
+    Mat rgbimage = imread("../../data/Lena.jpg");
     if(!rgbimage.data)//judge weather the image load successfully
     {
         cout << "Fail to load image!" << endl;
